@@ -69,35 +69,35 @@ public class GA_Clustering {
         int numDimensions = num / numLines;
         // number of dimensions of problem space
         
-        int numClusters = Integer.parseInt(JOptionPane.showInputDialog("Enter the amount of clusters"));
+        int numClusters = 2;
         // the number of centroids
         
-        int populationSize = Integer.parseInt(JOptionPane.showInputDialog("Enter the population size"));
+        int populationSize = 2;
         // number of chromosomes
        
-        int centroidInitializationType = Integer.parseInt(JOptionPane.showInputDialog("Enter the centroid initialization type\n1 = random initialization, 2 = randomly select pattern"));
+        int centroidInitializationType = 1;
         // 1 = random initialization
         // 2 = randomly select existing data point
 
-        int selectionType = Integer.parseInt(JOptionPane.showInputDialog("Enter the selection type\n1 = roulette wheel, 2 = tournament selection"));
+        int selectionType = 1;
         // 1 = roulette wheel
         // 2 = tournament selection
 
-        int tournamentSize = Integer.parseInt(JOptionPane.showInputDialog("Enter the tournament size (if you chose roulette wheel, just enter any integer value)"));
+        int tournamentSize = 1;
         // if tournament selection is used
 
         int crossoverType = Integer.parseInt(JOptionPane.showInputDialog("Enter the crossover type\n1 = one-point crossover, 2 = arithmetic crossover"));
         // 1 = one-point
         // 2 = arithmetic
 
-        int mutationType = Integer.parseInt(JOptionPane.showInputDialog("Enter the mutation type\n1 = swap mutation, 2 = gaussian noise mutation"));
+        int mutationType = 1;
         // 1 = swap
         // 2 = guassian noise
 
-        int numIterations = Integer.parseInt(JOptionPane.showInputDialog("Enter the number of iterations the GA should complete"));
+        int numIterations = 10;
         // the maximum number of iterations that the GA can complete
 
-        double crossoverProbablity = Double.parseDouble(JOptionPane.showInputDialog("Enter the crossover probability"));
+        double crossoverProbablity = 99;
         // the probability that crossover will take place
     
     
